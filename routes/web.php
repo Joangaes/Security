@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('securityAlgorithim','securityAlgorithimController@getOptions');
+Route::get('/securityAlgorithim','SecurityAlgorithimController@getOptions');
+Route::post('/securityAlgorithim','SecurityAlgorithimController@getAlgorithimScores');

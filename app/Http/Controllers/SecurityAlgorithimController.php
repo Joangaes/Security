@@ -1,10 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\SecuritySolution;
 
 use Illuminate\Http\Request;
 
-class SecurityAlgorithmController extends Controller
+class SecurityAlgorithimController extends Controller
 {
     public function getOptions()
     {
@@ -12,4 +13,10 @@ class SecurityAlgorithmController extends Controller
 
         return view('securityAlgorithim.getOptions')->with(['security_solutions'=>$security_solutions]);
     }
+
+    public function getAlgorithimScores(Request $request)
+    {
+        $input = $request->all();
+        dd($input);
+    } 
 }
