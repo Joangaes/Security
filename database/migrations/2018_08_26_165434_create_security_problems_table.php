@@ -16,7 +16,7 @@ class CreateSecurityProblemsTable extends Migration
         Schema::create('security_problems', function (Blueprint $table) {
             $table->increments('security_problem_id');
             $table->timestamps();
-            $table->string('name');
+            $table->string('risk_name');
         });
     }
 

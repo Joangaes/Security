@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class SecurityProblem extends Model
 {
-    $table = 'security_problems';
+    protected $table = 'security_problems';
 
-    $primaryKey = 'security_problem_id';
+    protected $primaryKey = 'security_problem_id';
 
 
     public function SecurityProblemSecuritySolutions()
